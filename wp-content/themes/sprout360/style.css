@@ -1,0 +1,306 @@
+/*
+
+Template: wp-bootstrap-starter
+Theme Name: Sprout Bootstrap 360
+Theme URI: https://afterimagedesigns.com/wp-bootstrap-starter/
+Author: Afterimage Designs
+Author URI: https://afterimagedesigns.com/
+Description:  The best WordPress starter theme based on the most powerful frameworks in the world: "_s" (by Automattic, the main people behind WordPress development), Twitter Bootstrap (the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web) and Font Awesome (or Fontawesome, a full suite of 675+ pictographic icons for easy scalable vector graphics on websites). This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want. Your feedback on how we can continuously improve this WordPress Starter Theme Bootstrap will be highly appreciated. Page templates includes Right-sidebar (default page template), Left-Sidebar, Full-Width, Blank with container, Blank without container Page. Other features - Currently using Bootstrap v4.0.0-beta.2 , Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with Elementor Page Builder. This theme will be an active project which we will update from time to time. Check this page regularly for the updates.
+Version: 3.0.7
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: wp-bootstrap-starter
+Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
+*/
+/*==============
+    CLASSES
+===============*/
+.center-all {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%; }
+
+.container {
+  max-width: 1200px; }
+  .container.wide {
+    max-width: 1400px; }
+
+.bg-one {
+  background: #45398B; }
+
+.bg-two {
+  background: #FE6198; }
+
+.bg-three {
+  background: #E2E0ED; }
+
+.bg-four {
+  background: #EDF5F8; }
+
+.border-top {
+  border-top: 1px solid #45398B; }
+
+.border-bottom {
+  border-bottom: 1px solid #45398B; }
+
+.border-right {
+  border-bottom: 1px solid #45398B; }
+
+.border-left {
+  border-bottom: 1px solid #45398B; }
+
+.fluid,
+.break {
+  width: 100%; }
+
+.horizontal-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.inherit-size {
+  height: 100%;
+  width: 100%; }
+
+.no-bullets {
+  list-style: none; }
+
+/*==============
+    GENERAL
+===============*/
+body {
+  color: #343a40; }
+
+h2 {
+  font-weight: 400; }
+
+h3 {
+  font-weight: 500; }
+
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  a:hover {
+    text-decoration: none; }
+
+/*==============
+    HEADER
+===============*/
+header#masthead {
+  background-color: #45398B;
+  color: white;
+  padding-top: 1.5em; }
+  header#masthead a {
+    color: white; }
+  header#masthead .main-nav a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9em; }
+  header#masthead .primary .menu-item-27 a {
+    border-bottom: 1px solid white; }
+  header#masthead .primary a:hover {
+    border-bottom: 1px solid white; }
+  header#masthead .secondary .active {
+    background: rgba(226, 224, 237, 0.2);
+    border-radius: 5px; }
+  header#masthead .seperator {
+    margin-top: 4px;
+    color: rgba(226, 224, 237, 0.2); }
+
+/*==============
+    FOOTER
+===============*/
+footer.site-footer a {
+  color: #73808c; }
+
+footer.site-footer .btn {
+  width: 100%;
+  background: #FE6198;
+  border-style: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  footer.site-footer .btn:hover {
+    background: #645B9E; }
+
+footer.site-footer h4 {
+  color: #73808c;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+footer.site-footer .logo {
+  color: #45398B; }
+
+footer.site-footer .phone-links {
+  margin-bottom: 2em; }
+  footer.site-footer .phone-links a {
+    display: block; }
+
+footer.site-footer ul {
+  list-style: none;
+  padding: 0; }
+  footer.site-footer ul a {
+    text-transform: capitalize; }
+
+footer.site-footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em; }
+
+footer.site-footer .summary {
+  margin-bottom: 2em; }
+
+/*=================
+    HOME
+=================*/
+.home .block {
+  min-height: 400px;
+  padding: 6em 15px; }
+  .home .block .default-img {
+    font-size: 10em;
+    color: white; }
+  .home .block-1, .home .block .get-started {
+    background: #45398B;
+    min-height: 400px;
+    color: white; }
+    .home .block-1 h2, .home .block .get-started h2 {
+      font-size: 4em;
+      font-weight: 300; }
+    .home .block-1 p, .home .block .get-started p {
+      margin: 2em 0; }
+    .home .block-1 .btn, .home .block .get-started .btn {
+      color: white;
+      border-radius: 3px;
+      background: #FE6198;
+      padding: 0.5em 2em;
+      text-transform: capitalize;
+      border-style: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      font-weight: bold; }
+      .home .block-1 .btn:hover, .home .block .get-started .btn:hover {
+        background: rgba(226, 224, 237, 0.5); }
+  .home .block-2, .home .block .web-meeting {
+    color: #45398B; }
+    .home .block-2 .icon-container .big-number, .home .block .web-meeting .icon-container .big-number {
+      color: #E2E0ED;
+      font-size: 12em; }
+    .home .block-2 .icon-container .small-icon, .home .block .web-meeting .icon-container .small-icon {
+      color: #FE6198;
+      font-size: 4em; }
+    .home .block-2 p, .home .block .web-meeting p {
+      color: #343a40;
+      font-size: 0.8em; }
+  .home .block-3 {
+    background: #EDF5F8;
+    color: #343a40; }
+    .home .block-3 .chrome {
+      color: #00b33c; }
+    .home .block-3 .default-img {
+      color: #45398B; }
+    .home .block-3 .firefox {
+      color: #ff751a; }
+    .home .block-3 .explorer {
+      color: #1a75ff; }
+    .home .block-3 h2 {
+      color: #45398B; }
+    .home .block-3 li.item {
+      font-size: 3em; }
+    .home .block-3 .opera {
+      color: #ff1a1a; }
+    .home .block-3 .safari {
+      color: #1a75ff; }
+  .home .block-4 {
+    color: #45398B;
+    text-align: center; }
+    .home .block-4 h3 {
+      color: #343a40;
+      text-transform: uppercase;
+      font-size: 1em; }
+    .home .block-4 .help-block h3 {
+      color: #45398B;
+      text-transform: capitalize;
+      font-size: 2em;
+      font-weight: 400; }
+    .home .block-4 .help-block svg {
+      margin: 1em auto;
+      margin-bottom: 0.5em;
+      font-size: 2em; }
+    .home .block-4 .help-links {
+      font-size: 1.5em;
+      margin-top: 1em;
+      width: 37%; }
+    .home .block-4 p {
+      color: #343a40;
+      width: 50%;
+      margin: auto; }
+    .home .block-4 .phone {
+      color: #45398B; }
+    .home .block-4 .price {
+      font-size: 5em; }
+    .home .block-4 .price-block {
+      -webkit-box-shadow: 10px 10px 60px rgba(52, 58, 64, 0.3);
+              box-shadow: 10px 10px 60px rgba(52, 58, 64, 0.3);
+      padding: 2em 1em;
+      min-height: 250px;
+      margin: 5em 0; }
+      .home .block-4 .price-block p {
+        width: 85%; }
+    .home .block-4 .price-plan {
+      color: #FE6198; }
+    .home .block-4 .price-sign {
+      font-size: 2em; }
+    .home .block-4 .price-time {
+      font-size: 2.2em; }
+    .home .block-4 .separator {
+      color: #E2E0ED; }
+    .home .block-4 .trial-link {
+      text-decoration: underline;
+      text-transform: capitalize; }
+      .home .block-4 .trial-link:hover {
+        color: #FE6198; }
+  .home .block-5 {
+    background: #45398B;
+    text-align: center;
+    color: white; }
+    .home .block-5 a {
+      color: #645B9E;
+      text-decoration: underline; }
+    .home .block-5 button {
+      background: #FE6198;
+      color: white;
+      border-style: none;
+      padding: .375em .75em;
+      border-radius: .25em;
+      text-transform: capitalize;
+      width: 100%;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      font-weight: bold; }
+      .home .block-5 button:hover {
+        background: rgba(226, 224, 237, 0.3); }
+      .home .block-5 button span, .home .block-5 button svg {
+        font-size: 0.8em;
+        margin-left: 0.5em; }
+    .home .block-5 .form {
+      margin: 2em 0; }
+    .home .block-5 .form-control {
+      max-width: 220px; }
+    .home .block-5 h2 {
+      text-transform: capitalize; }
