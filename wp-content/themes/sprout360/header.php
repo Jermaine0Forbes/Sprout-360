@@ -26,8 +26,8 @@
 	<header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_header_class(); ?>" role="banner">
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
-                <div class="row w-100">
-                    <div class="navbar-brand col-md-3">
+                <div class="row fluid mx-auto">
+                    <div class="navbar-brand col-6 col-md-2 col-lg-3">
                         <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                             <a href="<?php echo esc_url( home_url( '/' )); ?>">
                                 <img src="<?php echo esc_attr(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
@@ -37,9 +37,10 @@
                         <?php endif; ?>
 
                     </div>
-                    <div class="col-md-7 ml-auto">
+                    <div class="col-md-9 col-lg-7 ml-auto hide lg-show-b ">
                         <?php include("navigation.php"); ?>
                     </div>
+                        <?php include("mobile-navigation.php"); ?>
 
                 </div>
 

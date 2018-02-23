@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "pretty":true,
+    "removeComments":true,
+      "target":"es5",
+      "types":["jquery"]
+   
+  },
+
+     "noImplicityAny":true,
+    "allowSyntheticDefaultImports": true,
+    
+}

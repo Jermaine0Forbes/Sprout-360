@@ -1,14 +1,20 @@
 var path = require('path');
 const extractPlugin = require('extract-text-webpack-plugin');
-const ex = new extractPlugin('./style.css');
+const ex = new extractPlugin('../style.css');
 const autoPrefix = { loader:'postcss-loader',options:{plugins:(loader)=>[require('autoprefixer')()]}};
 
 /*   SASS  */
 const config = {
-    entry:'./wp-content/themes/sprout360/js/sass.js',
+    entry:{
+        style:'./wp-content/themes/sprout360/js/sass.js',
+        main: './wp-content/themes/sprout360/js/type.js'
+    },
     output:{
-        path: path.resolve('wp-content/themes/sprout360'),
-        filename:'bundle.js'
+        path: path.resolve('wp-content/themes/sprout360/js'),
+        filename:'[name].js'
+    },
+    resolve:{
+        extensions:['.ts', '.tsx', '.js']
     },
     module:{
         rules:[
@@ -17,6 +23,11 @@ const config = {
                 use:ex.extract(['css-loader',autoPrefix,'sass-loader'])
 
             },
+             {
+                test:/\.tsx?$/,
+                loader:'ts-loader'
+
+            }
         ]
     },
     watch:true,

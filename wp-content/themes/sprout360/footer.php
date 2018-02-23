@@ -17,8 +17,8 @@
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container p-3 p-md-5">
-			<div class="row">
-                <div class="col-md-4">
+			<div class="row footer-block block-1">
+                <div class=" col-md-12 col-lg-4">
                     <?php echo '<a class="logo" href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                     <div class="w-100"></div>
                     <p class="summary">
@@ -29,10 +29,11 @@
 						<a href="#"><strong>US & CAN</strong>: 1-800-867-5309</a>
 						<a href="#"><strong>Worldwide</strong>: 1-800-867-5309</a>
 					</p>
-                    <div class="w-100"></div>
+<!--                    <div class="w-100"></div>-->
                 </div>
-                <div class="col-md-8 row">
-                    <div class="col-md-3">
+                <div class="col-md-12 col-lg-8 ">
+                    <div class="row">
+                        <div class="col-md-3">
                         <h4 >learn more</h4>
                         <ul>
                             <li><a href="#">how it works?</a></li>
@@ -68,10 +69,14 @@
 							<a href="#" ><span class="fa fa-twitter"></span></a>
 						</div>
                     </div>
+                    
+                    
+                    </div>
+                    
 
                 </div>
 			</div>
-			<div class="row ">
+			<div class="row  footer-block block-2 ">
                 <div class="site-info border-top w-100 py-2">
                     &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                     <span class="sep"> | </span>
