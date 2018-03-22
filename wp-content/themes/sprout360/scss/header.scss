@@ -1,0 +1,131 @@
+/*==============
+    HEADER
+===============*/
+
+header#masthead {
+    background-color: $one;
+    color: white;
+    padding: 1em 0;
+
+
+    a {
+        color: white;
+    }
+
+    .main-nav {
+        a {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+    }
+
+    .mobile-nav {
+        //        display:none;
+        width: 100%;
+        &.collapse {
+            display: none;
+            &.show {
+                display: block;
+            }
+        }
+
+        a {
+            text-align: center;
+        }
+
+        .seperator {
+            display: none;
+        }
+
+        .secondary {
+
+            .active {
+                border-radius: 0;
+            }
+
+            .nav-item {
+                width: 50%;
+                background: $two;
+            }
+
+
+        }
+    }
+
+    .mobile-btn {
+        font-size: 2em;
+        text-align: right;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .primary {
+        .active {
+            a {
+                border-bottom: 1px solid white;
+            }
+        }
+
+        a {
+            border-bottom: 1px solid transparent;
+            &:hover {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+
+    .secondary {
+        .active {
+            background: transparentize($four, 0.8);
+            border-radius: 5px;
+        }
+    }
+
+    .seperator {
+        margin-top: 4px;
+        color: transparentize($four, 0.8);
+    }
+}
+
+@media(max-width:1114px) and (min-width:992px) {
+
+    header#masthead {
+
+        .main-nav {
+            a {
+                font-size: 0.7em;
+            }
+        }
+
+
+    } //header
+} //1114
+@media(max-width:870px) and (min-width:769px) {
+
+    header#masthead {
+
+        .main-nav {
+            a {
+                font-size: 0.7em;
+            }
+        }
+
+
+    } //header
+} //870
+@media(max-width:768px) {
+
+    header#masthead {
+
+        .main-nav {
+            a {
+                text-align: center;
+            }
+        }
+
+
+    } //header
+} //768

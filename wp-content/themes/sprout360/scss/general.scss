@@ -1,189 +1,237 @@
-
-
-$generic-map : (base: #45398B, second:#FE6198 , third:#E2E0ED , fourth:#EDF5F8, fifth:#645B9E);
-$map : $generic-map;
+$generic-map: (base: #45398B, second:#FE6198, third:#E2E0ED, fourth:#EDF5F8, fifth:#645B9E);
+$sprout-map: (base: #58B147, second:#EA5A53, third:#4FC5D7, fourth:#FACE41, fifth:#606E7B, sixth:#bde2b6);
+$map: $sprout-map;
 
 //$size-class:( "xl", "lg","md","sm");
 //$size-max:( 1200,992,768,577);
-$size-class:( "sm","md","lg","xl");
-$size-max:(577,768,992,1200);
-$mar-class:( "mx","my", "mt","mb","mr", "ml");
+$size-class:( "sm", "md", "lg", "xl");
+$size-max:(577, 768, 992, 1200);
+$mar-class:( "mx", "my", "mt", "mb", "mr", "ml");
 
 
 
-$one: map-get($map, base) ; //purple
-$two: map-get($map, second) ; //pink
-$three: map-get($map, third);// lighter purple 
-$four: map-get($map, fourth); // light blue
-$five: map-get($map, fifth); // light purple
+$one: map-get($map, base); //green
+$two: map-get($map, second); //red
+$three: map-get($map, third); // cyan 
+$four: map-get($map, fourth); // yellow
+$five: map-get($map, fifth); // blue grey
+$six: map-get($map, sixth); // light green
 $grey: #73808c;
-$purp:$one;
-$pink:$two;
-$lpurp:$three;
-$lblue:$four;
+$green:$one;
+$red:$two;
+$blue:$three;
+$yellow:$four;
+$grey2:$five;
+$grey3:#F4F4F4;
+$green2:$six;
 $black: #343a40;
 
-$item-1:#ff751a ;
+$item-1:#ff751a;
 $item-2: #1a75ff;
 $item-3: #00b33c;
-$item-4:#ff1a1a ;
+$item-4:#ff1a1a;
+
+/*=================
+   CLASSES
+=================*/
+
+.bg {
+    &-green {
+        background: $one;
+    }
+    &-red {
+        background: $two;
+    }
+    &-blue {
+        background: $three;
+    }
+    &-yellow {
+        background: $four;
+    }
+
+    &-block {
+        background: white;
+        padding: 4em 2em;
+    }
 
 
+}
 
+.no-bullets {
+    list-style: none;
+    padding: 0;
+}
 
+.between {
+    justify-content: space-between;
+}
 
-
-
-
-/*==============
-    CLASSES
-===============*/
-
-
-
-.center-all{
+.center-all {
     justify-content: center;
     align-items: center;
-    height:100%;
-    width:100%;
+    display: flex;
+    height: auto;
+    width: 100%;
 }
 
 
 
-.container{
-    max-width:1200px;
+.container {
+    max-width: 1200px;
 
-    &.wide{
-        max-width:1400px;
+    &.wide {
+        max-width: 1400px;
     }
 }
 
-.bg{
-    &-one{
-        background:$one;
+.bg {
+    &-one {
+        background: $one;
     }
-    &-two{
-        background:$two;
+    &-two {
+        background: $two;
     }
-    &-three{
-        background:$three;
+    &-three {
+        background: $three;
     }
-    &-four{
-        background:$four;
+    &-four {
+        background: $four;
     }
 }
 
-.border{
-    &-top{
-        border-top:1px solid $one;
+.border {
+    &-top {
+        border-top: 1px solid $one;
     }
 
-    &-bottom{
-        border-bottom:1px solid $one;
+    &-bottom {
+        border-bottom: 1px solid $one;
     }
 
-    &-right{
-        border-bottom:1px solid $one;
+    &-right {
+        border-bottom: 1px solid $one;
     }
 
-    &-left{
-        border-bottom:1px solid $one;
+    &-left {
+        border-bottom: 1px solid $one;
     }
 }
 
 
 
 .fluid,
-.break{
-    width:100%;
+.break {
+    width: 100%;
 }
 
-.hide{
-    display:none;
+.hide {
+    display: none;
 }
 
-.horizontal-list{
-    display:flex;
-    list-style:none;
-    padding:0;
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
     justify-content: space-between;
 }
 
-.inherit-size{
-    height:100%;
-    width:100%;
+.icon {
+    font-size: 6em;
+}
+
+.inherit-size {
+    height: 100%;
+    width: 100%;
 }
 
 
 
-.no-bullets{
-    list-style:none;
+.no-bullets {
+    list-style: none;
 }
 
 
 @for $i from 1 through length($size-class) {
-  $class: nth($size-class, $i);
-  $max: nth($size-max, $i);
-    @media(min-width: $max+"px"){
-        .#{$class}-column{
-                flex-direction:column;
-        } 
-        .#{$class}-row{
-                flex-direction:row;
-                justify-content: space-around;
+    $class: nth($size-class, $i);
+    $max: nth($size-max, $i);
+    @media(min-width: $max+"px") {
+        .#{$class}-column {
+            flex-direction:column;
         }
-        
+        .#{$class}-row {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
     }
-    
+
 }
 
 @for $i from 1 through length($size-class) {
-  $class: nth($size-class, $i);
-  $max: nth($size-max, $i);
-    @media(min-width: $max+"px"){
+    $class: nth($size-class, $i);
+    $max: nth($size-max, $i);
+    @media(min-width: $max+"px") {
 
-        .#{$class}-invisible{
-                visibility:hidden;
+        .#{$class}-invisible {
+            visibility:hidden;
         }
 
-        .#{$class}-hide{
-               display:none;
+        .#{$class}-hide {
+            display: none;
         }
 
 
-        .#{$class}-visible{
-                visibility:hidden;
+        .#{$class}-visible {
+            visibility: hidden;
         }
-       
 
-        .#{$class}-show{
-                display:flex;
+
+        .#{$class}-show {
+            display: flex;
         }
-        .#{$class}-show-b{
-                display:block;
+        .#{$class}-show-b {
+            display: block;
         }
-        
-         
-        
+
+
+
     }
 
-    @media(max-width: $max+"px"){
-       
-        .break-#{$class}{width:100%;}
+    @media(max-width: $max+"px") {
 
-        .mx-auto-#{$class}{margin: 0 auto;}
-        .my-auto-#{$class}{margin: auto 0;}
-        .mt-auto-#{$class}{margin-top:auto;}
-        .mb-auto-#{$class}{margin-bottom:auto;}
-        .ml-auto-#{$class}{margin-left:auto;}
-        .mr-auto-#{$class}{margin-right:auto;}
+        .break-#{$class} {
+            width: 100%;
+        }
+
+        .mx-auto-#{$class} {
+            margin: 0 auto;
+        }
+        .my-auto-#{$class} {
+            margin: auto 0;
+        }
+        .mt-auto-#{$class} {
+            margin-top: auto;
+        }
+        .mb-auto-#{$class} {
+            margin-bottom: auto;
+        }
+        .ml-auto-#{$class} {
+            margin-left: auto;
+        }
+        .mr-auto-#{$class} {
+            margin-right: auto;
+        }
 
 
 
-        
-       
+
+
     }
-    
+
+}
+
+.y-center {
+    align-items: center;
 }
 
 
@@ -192,268 +240,58 @@ $item-4:#ff1a1a ;
     GENERAL
 ===============*/
 
-
-body{
-    color:$black;
+body {
+    color: $black;
 }
 
-h2{
-    font-weight:400;
+h2 {
+    font-weight: 400;
 }
 
-h3{
-    font-weight:500;
+h3 {
+    font-weight: 500;
 }
 
-a{
-    transition:all 0.3s;
-    &:hover{
-        text-decoration:none;
+a {
+    transition: all 0.3s;
+    &:hover {
+        text-decoration: none;
     }
 }
-
-/*==============
-    HEADER
-===============*/
-
-
-header#masthead{
-    background-color:$one;
-    color:white;
-    padding-top:1.5em;
-
-
-    a{
-        color:white;
-    }
-
-    .main-nav{
-        a{
-            text-transform:uppercase;
-            font-weight:500;
-            font-size: 0.9em;
-        }
-    }
-    
-    .mobile-nav{
-//        display:none;
-        width:100%;
-        &.collapse{
-            display:none;
-            &.show{
-                display:block;
-            }
-        }
-        
-        a{
-            text-align:center;
-        }
-        
-        .seperator{
-            display:none;
-        }
-        
-        .secondary{
-            
-            .active{
-                border-radius:0;
-            }
-            
-            .nav-item{
-                width:50%;
-                background:$two;
-            }
-            
-            
-        }
-    }
-    
-    .mobile-btn{
-        font-size:2em;
-        text-align:right;
-        
-        &:hover{
-            cursor:pointer;
-        }
-    }
-
-    .primary{
-        .menu-item-27{
-            a{
-                border-bottom:1px solid white;
-            }
-        }
-
-        a{
-            border-bottom:1px solid transparent;  
-            &:hover{
-                border-bottom:1px solid white;
-            }
-        }
-    }
-
-    .secondary{
-        .active{
-            background: transparentize($three, 0.8);
-            border-radius:5px;
-        }
-    }
-
-    .seperator{
-        margin-top:4px;
-        color:transparentize($three, 0.8);
-    }
-}
-
-@media(max-width:1114px) and (min-width:992px){
-    
-    header#masthead{
-        
-        .main-nav{
-             a{
-            font-size:0.7em;
-            }
-        }
-        
-       
-    }//header
-}//1114
-
-@media(max-width:870px) and (min-width:769px){
-    
-    header#masthead{
-        
-        .main-nav{
-             a{
-            font-size:0.7em;
-            }
-        }
-        
-       
-    }//header
-}//870
-
-
-@media(max-width:768px){
-    
-    header#masthead{
-        
-        .main-nav{
-             a{
-                 text-align:center;
-            }
-        }
-        
-       
-    }//header
-}//768
-
-
-
-
 
 
 /*==============
-    FOOTER
+    GET STARTED
 ===============*/
 
-footer.site-footer{
+.get-started {
 
-    a{
-        color:$grey;
-    }
+    background: $one;
+    color: white;
+    text-align: center;
 
-    .btn{
-        width:100%;
-        background:$two;
-        border-style:none;
-        font-weight:bold;
-        text-transform:capitalize;
-        color:white;
-        transition:all 0.3s;
 
-        &:hover{
-            background:$five;
-        }
-    }
+    input {
+        &[type=submit] {
+            background: $two;
+            padding: 0.5em 2em;
+            font-size: 1.2em;
+            border-style: none;
+            margin-top: 1em;
 
-    h4{
-        color:$grey;
-        text-transform:uppercase;
-        font-size:1.2em;
-    }
-
-    .logo{
-        color:$one;
-    }
-
-    .phone-links{
-        margin-bottom:2em;
-
-        a{
-            // font-weight:bold;
-            //color:$five;
-            display:block;
-        }
-    }
-
-    ul{
-        list-style:none;
-        padding:0;
-
-        a{
-            //color:$five;
-            text-transform:capitalize;
+            &:hover,
+            &:active,
+            &:focus {
+                background: $three;
+            }
         }
     }
 
 
-    .social-links{
-        display:flex;
-        justify-content: space-between;
-        margin-top:2em;
-
-        a{
-            //color:$five;
-        }
-
+    .required {
+        color: $two;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-left: 10px;
     }
-
-    .summary{
-        margin-bottom:2em;
-    }
-
-
-
-
-
-
-
 }
-
-
-@media(max-width:870px) and (min-width:769px){
-    
-    footer.site-footer{
-        
-        .btn{
-           font-size:0.8em;
-        }
-        
-       
-    }//footer
-}//768
-
-
-@media(max-width:768px){
-    
-    footer.site-footer{
-        
-        .footer-block{
-            text-align:center;
-        }
-        
-       
-    }//footer
-}//768
-

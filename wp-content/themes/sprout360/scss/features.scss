@@ -1,0 +1,225 @@
+/*=================
+   FEATURES
+=================*/
+
+#features {
+
+    .section {
+        padding: 4em 0;
+        background: $green;
+
+        &-1 {
+            background: white;
+            text-align: center;
+
+            .btn {
+
+                background: $red;
+                font-size: 1.5em;
+                border-style: none;
+                margin: 1em 0;
+                padding: 0.5em 2em;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: $blue;
+                }
+            }
+        }
+
+        &-3 {
+            text-align: center;
+
+            .btn {
+
+                background: $red;
+                font-size: 1.5em;
+                border-style: none;
+                margin: 1em 0;
+                padding: 0.5em 2em;
+                transition: all 0.3s;
+                text-transform: capitalize;
+
+                &:hover {
+                    background: $blue;
+                }
+            }
+
+
+
+            .fa,
+            svg {
+                color: $blue;
+                margin-right: 15px;
+            }
+
+
+
+        }
+
+        &-4 {
+
+            .btn {
+                background: black;
+                color: white;
+                margin-right: 1em;
+                border-style: none;
+                font-size: 1.3em;
+                margin-top: 1em;
+
+                .icon {
+                    font-size: 2em;
+                }
+
+                &:hover {
+                    background: $black;
+                }
+            }
+
+
+        }
+
+
+        &-5 {
+            .check-block {
+
+                background: $grey3;
+            }
+        }
+
+
+
+        &-2,
+        &-4,
+        &-6 {
+            color: white;
+        }
+
+    }
+
+    .arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 30px 30px 0;
+        border-color: transparent #f4f4f4 transparent transparent;
+        position: absolute;
+        bottom: -25px;
+        left: 15px;
+    }
+
+    .check {
+        color: white;
+        background: $blue;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: -25px;
+        left: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .check-block {
+        position: relative;
+        background: white;
+        color: $black;
+        padding: 1em;
+        padding-top: 2em;
+        margin-top: 3em;
+
+    }
+
+    .client-title {
+        font-weight: 500;
+        color: $grey;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+
+    .feature-item {
+        padding: 4em 2em; //        background: $six;
+        text-align: center;
+        display: block;
+        color: $black;
+        box-shadow: 0px 6px 15px transparentize($grey, 0.7);
+        transition: all 0.3s;
+
+        &:hover {
+            color: $green;
+            box-shadow: 0px 6px 25px transparentize($grey, 0.5);
+        }
+
+        .fa,
+        svg {
+
+            color: $one;
+            font-size: 4em;
+        }
+    }
+
+    h2 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    li {
+        font-size: 1.4em;
+        margin-bottom: 0.5em;
+    }
+
+    .picture {
+        height: 70px;
+        width: 100%;
+        max-width: 70px;
+        border-radius: 50%;
+        background: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1em;
+
+        .fa,
+        svg {
+            color: white;
+            font-size: 1.4em;
+        }
+
+
+    }
+
+    .speech-bubble {
+        position: relative;
+        margin-bottom: 2em;
+
+        p {
+            background: $grey3;
+            padding: 2em;
+            font-size: 1.2em;
+        }
+    }
+
+    .summary {
+        //        margin-bottom: 4em;
+        font-size: 1.3em;
+
+        &-2 {
+            font-size: 1.3em;
+            text-align: left;
+        }
+    }
+
+
+
+}

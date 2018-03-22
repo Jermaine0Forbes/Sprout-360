@@ -6,7 +6,7 @@
                 <p>
                     horeditch DIY enamel pin ugh. Activated charcoal tumblr next
                 </p>
-                <a class="btn" href="#">Get Started</a>
+                <a class="btn" href="/get-started">Get Started</a>
             </div>
             <div class="col-md-6">
                 <div class="d-flex  center-all">

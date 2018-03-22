@@ -2,372 +2,366 @@
     HOME
 =================*/
 
-.home{
+.home {
 
-    .main-block{
-        min-height:400px;
-        padding:6em 15px;
+    .main-block {
+        min-height: 400px;
+        padding: 6em 15px;
 
-        .default-img{
+        .default-img {
             font-size: 10em;
-            color:white;
-        }
-        
-        &.block{
-        &-1, .get-started{
-            background:$one;
-            min-height:400px;
-            color:white;
-
-            h2{
-                font-size:4em;
-                font-weight:300;
-            }
-
-            p{
-                margin:2em 0;
-            }
-
-            .btn{
-                color:white;
-                border-radius: 3px;
-                background:$two;
-                padding:0.5em 2em;
-                text-transform:capitalize;
-                border-style:none;
-                transition:all 0.3s;
-                font-weight:bold;
-                &:hover{
-                    background:transparentize($lpurp, 0.5);
-                }
-            }
+            color: white;
         }
 
-        &-2, .web-meeting
-        {
-            color:$purp;
+        &.block {
+            &-1,
+            .get-started {
+                background: $one;
+                min-height: 400px;
+                color: white;
 
-            .icon-container{
-                .big-number{
-                    color:$lpurp;
-                    font-size:12em;
+                h2 {
+                    font-size: 4em;
+                    font-weight: 300;
                 }
-                .small-icon{
-                    color:$pink;
-                    font-size:4em;
+
+                p {
+                    margin: 2em 0;
+                }
+
+                .btn {
+                    color: white;
+                    border-radius: 3px;
+                    background: $two;
+                    padding: 0.5em 2em;
+                    text-transform: capitalize;
+                    border-style: none;
+                    transition: all 0.3s;
+                    font-weight: bold;
+                    &:hover {
+                        background: transparentize($three, 0.5);
+                    }
                 }
             }
 
+            &-2,
+            .web-meeting {
+                color: $green;
 
-            p{
-                color:$black;
-                font-size:0.8em;
+                .icon-container {
+                    .big-number {
+                        color: $six;
+                        font-size: 12em;
+                    }
+                    .small-icon {
+                        color: $red;
+                        font-size: 4em;
+                    }
+                }
+
+
+                p {
+                    color: $black;
+                    font-size: 0.8em;
+                }
+
+
             }
 
+            &-3 {
+                background: $six;
+                color: $black;
 
+                .chrome {
+                    color: $item-3;
+                }
+                .default-img {
+                    color: $one;
+                }
+
+                .firefox {
+                    color: $item-1;
+                }
+
+                .explorer {
+                    color: $item-2;
+                }
+                h2 {
+                    color: $one;
+                }
+
+                li.item {
+                    font-size: 3em;
+                }
+                .opera {
+                    color: $item-4;
+                }
+
+                .safari {
+                    color: $item-2;
+                }
+            }
+
+            &-4 {
+
+                color: $green;
+                text-align: center;
+
+                h3 {
+                    color: $black;
+                    text-transform: uppercase;
+                    font-size: 1em;
+                }
+
+                .help-block {
+
+
+                    h3 {
+                        color: $green;
+                        text-transform: capitalize;
+                        font-size: 2em;
+                        font-weight: 400;
+                    }
+
+                    svg {
+                        margin: 1em auto;
+                        margin-bottom: 0.5em;
+                        font-size: 2em;
+                    }
+
+                }
+
+                .help-links {
+
+                    font-size: 1.5em;
+                    margin-top: 1em;
+                    width: 37%;
+                }
+
+                p {
+                    color: $black;
+                    width: 50%;
+                    margin: auto;
+                }
+
+                .phone {
+                    color: $green;
+                }
+
+                .price {
+                    font-size: 5em; // font-weight:bold;
+                }
+
+                .price-block {
+                    // display:flex;
+                    box-shadow: 10px 10px 60px transparentize($black, 0.7);
+                    padding: 2em 1em;
+                    min-height: 250px; // flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+                    margin: 5em 0;
+
+                    p {
+                        width: 85%;
+                    }
+
+
+                }
+
+                .price-plan {
+                    color: $two;
+
+
+                }
+
+                .price-sign {
+                    font-size: 2em;
+                }
+
+                .price-time {
+                    font-size: 2.2em;
+                }
+
+                .separator {
+                    color: $three;
+                }
+
+                .summary {}
+
+                .trial-link {
+                    text-decoration: underline;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: $two;
+                    }
+                }
+
+            }
+
+            &-5 {
+                background: $one;
+                text-align: center;
+                color: white;
+                a {
+                    color: $four;
+                    text-decoration: underline;
+                }
+
+                button {
+                    background: $two;
+                    color: white;
+                    border-style: none;
+                    padding: .375em .75em;
+                    border-radius: .25em;
+                    text-transform: capitalize;
+                    width: 100%;
+                    transition: all 0.3s;
+                    font-weight: bold;
+
+                    &:hover {
+                        background: transparentize($three, 0.7);
+                    }
+
+                    span,
+                    svg {
+                        font-size: 0.8em;
+                        margin-left: 0.5em;
+                    }
+                }
+
+                .form {
+                    margin: 2em 0;
+                }
+
+                .form-control {
+                    max-width: 220px;
+                }
+
+                h2 {
+                    text-transform: capitalize;
+                }
+
+
+            }
         }
 
-        &-3{
-            background:$four;
-            color:$black;
-
-            .chrome{
-                color:$item-3;
-            }
-            .default-img{
-                color:$one;
-            }
-
-            .firefox{
-                color:$item-1;
-            }
-
-            .explorer{
-                color:$item-2;
-            }
-            h2{
-                color:$one;
-            }
-
-            li.item{
-                font-size:3em;
-            }
-            .opera{
-                color:$item-4;
-            }
-
-            .safari{
-                color:$item-2;
-            }
-        }
-
-        &-4{
-
-            color:$purp;
-            text-align:center;
-
-            h3{
-                color:$black;
-                text-transform:uppercase;
-                font-size:1em;
-            }
-
-            .help-block{
-
-
-                h3{
-                    color:$purp;
-                    text-transform:capitalize;
-                    font-size:2em;
-                    font-weight:400;
-                }
-
-                svg{
-                    margin: 1em auto;
-                    margin-bottom:0.5em;
-                    font-size:2em;
-                }
-
-            }
-
-            .help-links{
-
-                font-size:1.5em;
-                margin-top:1em;
-                width:37%;
-            }
-
-            p{
-                color:$black;
-                width:50%;
-                margin:auto;
-            }
-
-            .phone{
-                color:$purp;
-            }
-
-            .price{
-                font-size:5em;
-                // font-weight:bold;
-            }
-
-            .price-block{
-                // display:flex;
-                box-shadow:10px 10px 60px transparentize($black,0.7);
-                padding:2em 1em;
-                min-height:250px;
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
-                margin: 5em 0;
-
-                p{
-                    width:85%;
-                }
-
-
-            }
-
-            .price-plan{
-                color:$two;
-
-
-            }
-
-            .price-sign{
-                font-size:2em;
-            }
-
-            .price-time{
-                font-size:2.2em;
-            }
-
-            .separator{
-                color:$three;
-            }
-
-            .summary{
-
-            }
-
-            .trial-link{
-                text-decoration:underline;
-                text-transform:capitalize;
-
-                &:hover{
-                    color:$two;
-                }
-            }
-
-        }
-
-        &-5{
-            background:$one;
-            text-align:center;
-            color:white;
-            a{
-                color:$five;
-                text-decoration:underline;
-            }
-
-            button{
-                background:$two;
-                color:white;
-                border-style:none;
-                padding: .375em .75em;
-                border-radius:.25em;
-                text-transform:capitalize;
-                width:100%;
-                transition: all 0.3s;
-                font-weight:bold;
-
-                &:hover{
-                    background:transparentize($three, 0.7);
-                }
-
-                span,svg{
-                    font-size:0.8em;
-                    margin-left:0.5em;
-                }
-            }
-
-            .form{
-                margin:2em 0;
-            }
-
-            .form-control{
-                max-width:220px;
-            }
-
-            h2{
-                text-transform:capitalize;
-            }
-
-
-        }
     }
-
-        }
 
 
 
 }
 
-@media(max-width:1200px){
-    
-    .home{
-        
-        .main-block{
-            
-            &.block-4{
+@media(max-width:1200px) {
 
-                .help-links{
-                    font-size:1.1em;
+    .home {
+
+        .main-block {
+
+            &.block-4 {
+
+                .help-links {
+                    font-size: 1.1em;
                 }
             }
 
-            &.block-5{
+            &.block-5 {
 
-                .form-control{
-                    max-width:180px;
-                    margin:0 5px;
+                .form-control {
+                    max-width: 180px;
+                    margin: 0 5px;
                 }
             }
-            
+
         }
-        
-        
-    }
-    
-}//1200
 
-@media(max-width:992px){
-    
-    .home{
-        
-        .main-block{
-            &.block-4{
-                
-                .help-links{
-                    font-size:1em;
-                    width:45%;
+
+    }
+
+} //1200
+@media(max-width:992px) {
+
+    .home {
+
+        .main-block {
+            &.block-4 {
+
+                .help-links {
+                    font-size: 1em;
+                    width: 45%;
                 }
 
             }
 
-            &.block-5{
+            &.block-5 {
 
-                .form-control{
-                    max-width:48%;
-                    margin:10px 5px;
-                }
-            }
-        }
-    }
-    
-}//992
-
-
-@media(max-width:768px){
-    
-    .home{
-        
-        .main-block{
-                
-                text-align:center;
-
-
-            &.block-2{
-
-                
-                h2{
-                    margin:auto;
+                .form-control {
+                    max-width: 48%;
+                    margin: 10px 5px;
                 }
             }
         }
     }
-    
-}//768
 
-@media(max-width:577px){
-    
-    .home{
-        
-        .main-block{
-            
-             &.block-4{
-                
-                .help-links{
-                    
-                    flex-direction:column;
-                     width:90%;
-                    
-                    a{
-                        font-size:1.5em;
-                        color:white;
-                        background:$two;
-                        margin:15px;
+} //992
+@media(max-width:768px) {
+
+    .home {
+
+        .main-block {
+
+            text-align: center;
+
+
+            &.block-2 {
+
+
+                h2 {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+} //768
+@media(max-width:577px) {
+
+    .home {
+
+        .main-block {
+
+            &.block-4 {
+
+                .help-links {
+
+                    flex-direction: column;
+                    width: 90%;
+
+                    a {
+                        font-size: 1.5em;
+                        color: white;
+                        background: $two;
+                        margin: 15px;
                         border-radius: 5px;
-                        padding:10px 0;
-                    } 
-                    
-                    
-                    .seperator{
-                        display:none;
+                        padding: 10px 0;
+                    }
+
+
+                    .seperator {
+                        display: none;
                     }
                 }
 
             }
-                
-             &.block-5{
 
-                .form-control{
-                    max-width:100%;
-                    margin:10px 12px;
+            &.block-5 {
+
+                .form-control {
+                    max-width: 100%;
+                    margin: 10px 12px;
                 }
             }
         }
     }
-    
-}//577
+
+} //577
