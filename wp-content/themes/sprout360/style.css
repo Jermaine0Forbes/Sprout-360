@@ -57,6 +57,8 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
   max-width: 1200px; }
   .container.wide {
     max-width: 1400px; }
+  .container.wider {
+    max-width: 1600px; }
 
 .bg-one {
   background: #58B147; }
@@ -108,6 +110,9 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 
 .no-bullets {
   list-style: none; }
+
+.site-logo {
+  width: 80%; }
 
 @media (min-width: 577px) {
   .sm-column {
@@ -373,7 +378,7 @@ header#masthead {
     border-radius: 5px; }
   header#masthead .seperator {
     margin-top: 4px;
-    color: rgba(250, 206, 65, 0.2); }
+    color: rgba(250, 206, 65, 0.5); }
 
 @media (max-width: 1114px) and (min-width: 992px) {
   header#masthead .main-nav a {
@@ -424,6 +429,10 @@ footer.site-footer ul {
   footer.site-footer ul a {
     text-transform: capitalize; }
 
+footer.site-footer .site-logo {
+  width: 60%;
+  margin-top: -25px; }
+
 footer.site-footer .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,7 +451,9 @@ footer.site-footer .summary {
 
 @media (max-width: 768px) {
   footer.site-footer .footer-block {
-    text-align: center; } }
+    text-align: center; }
+  footer.site-footer .site-logo {
+    margin-top: 0; } }
 
 /*=================
     HOME
@@ -793,3 +804,40 @@ footer.site-footer .summary {
   #features .summary-2 {
     font-size: 1.3em;
     text-align: left; }
+
+/*=================
+    HELP
+=================*/
+#help {
+  padding: 5em 0; }
+  #help aside {
+    max-width: 250px;
+    width: 100%;
+    border-right: 1px solid #bde2b6;
+    position: relative; }
+    #help aside a {
+      color: #343a40;
+      text-transform: capitalize;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      font-size: 1.2em;
+      font-weight: 450;
+      text-align: center; }
+      #help aside a:hover {
+        background: #bde2b6;
+        color: white; }
+  #help h1 {
+    color: #58B147;
+    font-size: 4em;
+    font-weight: 400; }
+  #help h2 {
+    font-size: 3em; }
+  #help h2,
+  #help h1 {
+    text-transform: capitalize;
+    margin-bottom: 0.5em; }
+  #help nav {
+    padding: 2em 0; }
+  #help .section {
+    text-align: center;
+    margin-bottom: 4em; }

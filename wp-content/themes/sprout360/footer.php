@@ -22,7 +22,10 @@
         <div class="container p-3 p-md-5">
             <div class="row footer-block block-1">
                 <div class=" col-md-12 col-lg-4">
-                    <?php echo '<a class="logo" href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
+                    <a href="<?php echo home_url(); ?>">
+                        <img class="img-fluid site-logo" src="https://sprout.jforbes.site/wp-content/uploads/2018/03/logo-color.png"/>
+                    </a>
+                    <?php //echo '<a class="logo" href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                     <div class="w-100"></div>
                     <p class="summary">
                         Lorem ipsum dolor amet hashtag vinyl kickstarter, raw denim pinterest biodiesel jianbing snackwave copper mug

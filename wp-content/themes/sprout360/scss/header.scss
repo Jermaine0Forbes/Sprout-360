@@ -86,8 +86,10 @@ header#masthead {
 
     .seperator {
         margin-top: 4px;
-        color: transparentize($four, 0.8);
+        color: transparentize($four, 0.5);
     }
+
+
 }
 
 @media(max-width:1114px) and (min-width:992px) {

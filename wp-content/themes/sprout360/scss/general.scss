@@ -82,6 +82,9 @@ $item-4:#ff1a1a;
     &.wide {
         max-width: 1400px;
     }
+    &.wider {
+        max-width: 1600px;
+    }
 }
 
 .bg {
@@ -148,6 +151,10 @@ $item-4:#ff1a1a;
 
 .no-bullets {
     list-style: none;
+}
+
+.site-logo {
+    width: 80%;
 }
 
 

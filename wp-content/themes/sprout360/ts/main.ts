@@ -36,7 +36,36 @@ class Human{
         
     })
 
+    console.log("debug")
+    
+    
+/*==================
+    HELP PAGE
+===================*/
+    
+    
+    
+    const sidebar = $("#side-nav");
+    const sidebarTop = $("#side-nav").offset().top;
+    /*
   
+    $window.on("scroll", function(){
+        
+        let scrollPosition:number = $window.scrollTop();
+        
+        if(sidebarTop < scrollPosition){
+            
+            sidebar.css({"position":"fixed", "left":"15%", transform:"translateX(-15%)"});
+        }else{
+            
+            sidebar.removeAttr("style");
+        }
+        
+        
+    })
+    */
+    
+    
 
     
 });

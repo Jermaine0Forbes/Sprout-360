@@ -104,6 +104,9 @@ jQuery(document).ready(function ($) {
             console.log("mobile-nav is hidden");
         }
     });
+    console.log("debug");
+    var sidebar = $("#side-nav");
+    var sidebarTop = $("#side-nav").offset().top;
 });
 
 

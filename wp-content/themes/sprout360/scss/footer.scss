@@ -52,6 +52,12 @@ footer.site-footer {
         }
     }
 
+    .site-logo {
+
+        width: 60%;
+        margin-top: -25px;
+    }
+
 
     .social-links {
         display: flex;
@@ -95,6 +101,13 @@ footer.site-footer {
         .footer-block {
             text-align: center;
         }
+
+
+        .site-logo {
+
+            margin-top: 0;
+        }
+
 
 
     } //footer
